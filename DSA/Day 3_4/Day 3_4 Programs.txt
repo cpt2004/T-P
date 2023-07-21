@@ -1,0 +1,90 @@
+1.
+#include <stdio.h>
+
+int isEven(int num) {
+    if (num % 2 == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+int main() {
+    int number = 10;
+    if (isEven(number)) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
+    return 0;
+}
+
+2.
+#include <stdio.h>
+
+int isOdd(int num) {
+    if (num % 2 != 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+int main() {
+    int number = 15;
+    if (isOdd(number)) {
+        printf("%d is odd.\n", number);
+    } else {
+        printf("%d is even.\n", number);
+    }
+    return 0;
+}
+
+3.
+#include <stdio.h>
+
+int getLastDigit(int num) {
+    return num % 10;
+}
+
+int main() {
+    int number = 12345;
+    int lastDigit = getLastDigit(number);
+    printf("The last digit of %d is %d.\n", number, lastDigit);
+    return 0;
+}
+
+4.
+#include <stdio.h>
+
+int getSecondLastDigit(int num) {
+    return (num / 10) % 10;
+}
+
+int main() {
+    int number = 12345;
+    int secondLastDigit = getSecondLastDigit(number);
+    printf("The second last digit of %d is %d.\n", number, secondLastDigit);
+    return 0;
+}
+
+5.
+#include <stdio.h>
+
+int getLastDigit(int num) {
+    return num % 10;
+}
+
+int sumOfLastDigits(int num1, int num2) {
+    int lastDigit1 = getLastDigit(num1);
+    int lastDigit2 = getLastDigit(num2);
+    return lastDigit1 + lastDigit2;
+}
+
+int main() {
+    int number1 = 12345;
+    int number2 = 67890;
+    int sum = sumOfLastDigits(number1, number2);
+    printf("The sum of the last digits of %d and %d is %d.\n", number1, number2, sum);
+    return 0;
+}
