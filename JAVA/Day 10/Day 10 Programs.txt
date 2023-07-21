@@ -1,0 +1,36 @@
+1.
+public class Main {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+}
+
+2.
+public class Main {
+    public static boolean isOdd(int number) {
+        return number % 2 != 0;
+    }
+}
+
+3.
+public class Main {
+    public static int getLastDigit(int number) {
+        return number % 10;
+    }
+}
+
+4.
+public class Main {
+    public static int getSecondLastDigit(int number) {
+        return (number / 10) % 10;
+    }
+}
+
+5.
+public class Main {
+    public static int sumOfLastDigits(int number1, int number2) {
+        int lastDigit1 = number1 % 10;
+        int lastDigit2 = number2 % 10;
+        return lastDigit1 + lastDigit2;
+    }
+}
